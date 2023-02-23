@@ -1,0 +1,32 @@
+header {
+    width: 100vw;
+    height: 60px;
+    background-color: #424953;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    nav {
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            a {
+                margin: 1.2rem;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                color: #aea17f;
+                text-decoration: none;
+            }
+        }
+    }
+    button {
+        justify-self:flex-end;
+        background-color: #aea17f;
+        border: none;
+        width: 100px;
+        height: 20px;
+        border-radius: 10px;
+    }
+}
