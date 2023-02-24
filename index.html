@@ -22,7 +22,8 @@
           <li><a href="#">Beställning</a></li>
         </ul>
       </nav>
-      <button class="uppercase">Logga in</button>
+      <p id="pLoginMessage" class="hidden"></p>
+      <button class="uppercase" id="btnOpenLogin">Logga in</button>
     </header>
     <!--
       Hero image - Text
@@ -30,6 +31,16 @@
     <div>
       <p class="uppercase">Ett nytt sätt att upptäcka</p>
       <h1>Silkeslena produkter med glansiga detaljer</h1>
+    </div>
+
+    <div id="formLogin">
+      <img src="./Resources/close-symbol.svg" alt="Stäng">
+      <h2>Logga in</h2>
+      <p>Använd ditt namn för att logga in</p>
+      <form>
+        <input type="text" name="Namnfält" id="txtInputName">
+        <input type="submit" value="Logga in" id="btnLogin">
+      </form>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

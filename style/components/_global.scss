@@ -11,3 +11,14 @@ body {
 .uppercase {
     text-transform: uppercase;
 }
+
+.hidden {
+    display: hidden;
+}
+
+#formLogin {
+    position: fixed;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+}
