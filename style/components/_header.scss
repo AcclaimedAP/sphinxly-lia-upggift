@@ -28,18 +28,29 @@ header {
             }
         }
     }
-    button {
+    .right-align {
         justify-self:flex-end;
-        background-color: #aea17f;
-        border: none;
-        width: 160px;
-        height: 36px;
-        border-radius: 25px;
-        font-size: 1.1rem;
         right: 120px;
         position: absolute;
-        cursor: pointer;
-        font-family: 'Lato', sans-serif;
-        letter-spacing: 1px;
+
+        p {
+            display: inline;
+            color: white;
+            margin: 30px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        button {
+            background-color: #aea17f;
+            border: none;
+            width: 160px;
+            height: 36px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+        }
     }
 }
