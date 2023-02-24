@@ -92,3 +92,40 @@ header {
     }    
 }
 
+@media only screen and (max-width: 730px) {
+    .right-align {
+        display: flex;
+        align-items: center;
+        p {
+            display: block;
+            strong {
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .right-align {
+        p {
+            max-width: 130px;
+        }
+    }
+}
+@media only screen and (max-width: 550px) {
+    .right-align {
+        p {
+            max-width: initial;
+        }
+    }
+    header {
+        img {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 430px) {
+    .right-align {
+        left: -24px;
+        width: calc(100% - 94px);
+    }
+}
