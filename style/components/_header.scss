@@ -62,18 +62,16 @@ header {
             cursor: pointer;
             padding: 12px;
 
-        span {
-            display: block;
-            min-width: 30px;
-            min-height: 4px;
-            margin: 4px;
-            background-color: #aea17f;
-            border-radius: 2px;
+            span {
+                display: block;
+                min-width: 30px;
+                min-height: 4px;
+                margin: 4px;
+                background-color: #aea17f;
+                border-radius: 2px;
+            }
         }
     }
-    }
-
-
 }
 
 @media only screen and (max-width: 1240px) {
