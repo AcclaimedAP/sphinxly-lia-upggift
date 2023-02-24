@@ -3,6 +3,7 @@ function checkArray(array, value) {
 }
 
 function checkHistory(username) {
+    username = username.toLowerCase();
     const usernames = JSON.parse(localStorage.getItem("usernames"));
     if (usernames && usernames.length >= 1) {
         if (checkArray(usernames, username)) {
