@@ -1,23 +1,30 @@
 header {
     width: 100vw;
-    height: 60px;
+    height: 76px;
     background-color: #424953;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    position: relative;
+
+    img {
+        position: relative;
+        left: 120px;
+    }
 
     nav {
-
+        position: relative;
+        left: 80px;
         ul {
             display: flex;
             list-style: none;
 
             a {
-                margin: 1.2rem;
-                font-size: 1.3rem;
-                text-transform: uppercase;
+                margin: 1.6rem;
+                font-size: 1.05rem;
                 color: #aea17f;
                 text-decoration: none;
+                letter-spacing: 1px;
             }
         }
     }
@@ -25,8 +32,14 @@ header {
         justify-self:flex-end;
         background-color: #aea17f;
         border: none;
-        width: 100px;
-        height: 20px;
-        border-radius: 10px;
+        width: 160px;
+        height: 36px;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        right: 120px;
+        position: absolute;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
     }
 }
