@@ -12,7 +12,7 @@ header {
         left: 120px;
     }
 
-    nav {
+    .navigation {
         position: relative;
         left: 80px;
         ul {
@@ -20,11 +20,13 @@ header {
             list-style: none;
 
             a {
-                margin: 1.6rem;
+                margin: calc(0.6rem + 2vw);
                 font-size: 1.05rem;
                 color: #aea17f;
                 text-decoration: none;
                 letter-spacing: 1px;
+                white-space: nowrap;
+                
             }
         }
     }
@@ -52,5 +54,41 @@ header {
             font-family: 'Lato', sans-serif;
             letter-spacing: 1px;
         }
+        .mobile-hamburger {
+            position: absolute;
+            top: 50%;
+            right: -130px;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            padding: 12px;
+
+        span {
+            display: block;
+            min-width: 30px;
+            min-height: 4px;
+            margin: 4px;
+            background-color: #aea17f;
+            border-radius: 2px;
+        }
+    }
+    }
+
+
+}
+
+@media only screen and (max-width: 1240px) {
+    header {
+        img {
+            left: calc(10px + 9%);
+        }
+    }
+    .navigation {
+        display: none;
     }
 }
+@media only screen and (min-width: 1240px) {
+    .mobile-hamburger {
+        display: none;
+    }    
+}
+
