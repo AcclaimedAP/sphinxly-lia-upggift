@@ -21,10 +21,66 @@
         line-height: 5rem;
     }
     p {
+        white-space: nowrap;
         position: absolute;
         font-size: 1.5rem;
         top: calc(50% - 6.5rem);
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    .hero {
+
+        p {
+            top: calc( 50% - 8rem);
+        }
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .hero {
+
+        p {
+            top: calc( 50% - 9.5rem);
+        }
+        h1 {
+            font-size: 4.5rem;
+        }
+    }
+}
+@media only screen and (max-width: 826px) {
+    .hero {
+
+        p {
+            top: calc( 50% - 11rem);
+        }
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+@media only screen and (max-width: 661px) {
+    .hero {
+
+        p {
+            top: calc( 50% - 12.5rem);
+            font-size: 1.4rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+}
+@media only screen and (max-width: 577px) {
+    .hero {
+
+        p {
+            top: calc( 50% - 14rem);
+            font-size: 1.4rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+        }
     }
 }
