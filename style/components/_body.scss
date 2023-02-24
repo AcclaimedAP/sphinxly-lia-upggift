@@ -1,5 +1,30 @@
 div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)),url("../Resources/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    min-height: calc(100vh - 76px);
+    position: relative;
+    color: white;
+
     h1 {
         font-family: 'Benne', serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        max-width: 100%;
+        text-align: center;
+        line-height: 5rem;
+    }
+    p {
+        position: absolute;
+        font-size: 1.5rem;
+        top: calc(50% - 6.5rem);
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
