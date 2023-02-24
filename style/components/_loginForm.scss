@@ -6,7 +6,7 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(0,0,0,0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) contrast(200%);
     div {
         position: fixed;
         top: 50%;
@@ -22,13 +22,18 @@
             float: right;
             width: 20px;
             height: 20px;
+            
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         form {
             position: absolute;
-            top: 50%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
+
 
             label {
                 font-size: 1.5rem;
@@ -43,12 +48,12 @@
             }
 
             .pOurTerms {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
                 text-align: center;
-                color: rgb(80, 80, 80);
+                color: rgb(100, 100, 100);
 
                 a {
-                    color: rgb(80, 80, 80);
+                    color: rgb(100, 100, 100);
                 }
             }
 
