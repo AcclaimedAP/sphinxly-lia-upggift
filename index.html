@@ -34,13 +34,16 @@
     </div>
 
     <div id="formLogin">
-      <img src="./Resources/close-symbol.svg" alt="Stäng">
-      <h2>Logga in</h2>
-      <p>Använd ditt namn för att logga in</p>
-      <form>
-        <input type="text" name="Namnfält" id="txtInputName">
-        <input type="submit" value="Logga in" id="btnLogin">
-      </form>
+      <div>
+        <img src="./Resources/close-symbol.svg" alt="Stäng">
+        <form>
+          <label><strong>Logga in</strong></label>
+          <p>Använd ditt namn för att logga in</p>
+          <input type="text" name="Namnfält" id="txtInputName" placeholder="Namn">
+          <input type="submit" value="Logga in" id="btnLogin">
+          <p class="pOurTerms">Genom att logga in godkänner du <a href="#">våra vilkor</a></p>
+        </form>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
