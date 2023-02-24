@@ -58,6 +58,12 @@
                 }
             }
 
+            .errorMessage {
+                color: red;
+                font-size: 1rem;
+                margin: 0;
+            }
+
             input[type=text] {
                 width: calc(100% - 20px);
                 display: block;
