@@ -28,16 +28,33 @@ function toggleLoginForm() {
     form.classList.toggle('hidden');
 }
 
+function ToggleLoginMessage() {
+    const pLoginMessage = document.getElementById('pLoginMessage');
+    pLoginMessage.classList.toggle('hidden');
+}
+
+function Logout() {
+    const btnOpenLogin = document.getElementById('btnOpenLogin');
+    btnOpenLogin.removeEventListener('click', Logout);
+    ToggleLoginMessage();
+    btnOpenLogin.innerHTML = "Logga in";
+    init();
+
+}
+
 function Login(username) {
     const btnOpenLogin = document.getElementById('btnOpenLogin');
     const pLoginMessage = document.getElementById('pLoginMessage');
     btnOpenLogin.innerHTML = 'Logga ut';
     btnOpenLogin.removeEventListener('click', toggleLoginForm);
-    
+    btnOpenLogin.addEventListener('click', Logout);
+
     toggleLoginForm();
+    ToggleLoginMessage();
+
     let message = checkHistory(username) ? "Välkommen tillbaka " : "Du är inloggad som ";
     pLoginMessage.innerHTML = `${message}<strong>${username}</strong>`
-    pLoginMessage.classList.remove('hidden');
+
 }
 
 function ThrowError() {
