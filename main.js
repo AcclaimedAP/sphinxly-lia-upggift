@@ -31,7 +31,9 @@ function toggleLoginForm() {
 function Login(username) {
     const btnOpenLogin = document.getElementById('btnOpenLogin');
     const pLoginMessage = document.getElementById('pLoginMessage');
+    btnOpenLogin.innerHTML = 'Logga ut';
     btnOpenLogin.removeEventListener('click', toggleLoginForm);
+    
     toggleLoginForm();
     let message = checkHistory(username) ? "Välkommen tillbaka " : "Du är inloggad som ";
     pLoginMessage.innerHTML = `${message}<strong>${username}</strong>`
