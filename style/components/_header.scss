@@ -12,11 +12,15 @@ header {
     img {
         position: relative;
         left: 120px;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
     }
 
     .navigation {
         position: relative;
         left: 80px;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
         ul {
             display: flex;
             list-style: none;
@@ -28,7 +32,14 @@ header {
                 text-decoration: none;
                 letter-spacing: 1px;
                 white-space: nowrap;
-                
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: $gold-hilight;
+                }
+                &:active {
+                    color: $gold-subtle;
+                }
             }
         }
     }
@@ -55,6 +66,16 @@ header {
             cursor: pointer;
             font-family: 'Lato', sans-serif;
             letter-spacing: 1px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $gold-hilight;
+            }
+            &:active {
+                background-color: $gold-subtle;
+                margin-bottom: -4px;
+            }
+
         }
         .mobile-hamburger {
             position: absolute;
@@ -64,6 +85,10 @@ header {
             cursor: pointer;
             padding: 12px;
 
+            &:hover span{
+                box-shadow: 0 0 4px $gold-hilight;
+            }
+            
             span {
                 display: block;
                 min-width: 30px;
@@ -71,6 +96,7 @@ header {
                 margin: 4px;
                 background-color: $gold;
                 border-radius: 2px;
+                transition: all 0.2s;
             }
         }
     }
@@ -83,7 +109,7 @@ header {
         }
     }
     .navigation {
-        display: none;
+        opacity: 0 !important;
     }
 }
 @media only screen and (min-width: 1240px) {
@@ -119,7 +145,7 @@ header {
     }
     header {
         img {
-            display: none;
+            opacity: 0;
         }
     }
 }
@@ -127,5 +153,10 @@ header {
     .right-align {
         left: -24px;
         width: calc(100% - 94px);
+        button {
+            position: absolute;
+            right: 0px;
+        }
     }
+    
 }

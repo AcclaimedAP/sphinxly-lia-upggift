@@ -1,4 +1,5 @@
 @use './modules/variables' as *;
+@use './modules/animations' as *;
 
 #formLogin {
     position: fixed;
@@ -24,9 +25,15 @@
             float: right;
             width: 20px;
             height: 20px;
-
+            cursor: pointer;
+            transition: all 0.2s;
+            transform: rotate(0deg);
             &:hover {
-                cursor: pointer;
+                animation-name: shake;
+                animation-duration: 0.4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
             }
         }
 
@@ -89,6 +96,14 @@
                 text-align: center;
                 border-radius: $border-radius;
                 cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                
+                &:hover {
+                    background-color: $gold-hilight;
+                }
+                &:active {
+                    background-color: $gold-subtle;
+                }
             }
         }
     }

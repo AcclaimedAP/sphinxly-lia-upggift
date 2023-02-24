@@ -19,6 +19,7 @@
         max-width: 100%;
         text-align: center;
         line-height: 5rem;
+        transition: all 0.3s ease-in-out;
     }
     p {
         white-space: nowrap;
@@ -27,6 +28,7 @@
         top: calc(50% - 6.5rem);
         left: 50%;
         transform: translate(-50%, -50%);
+        transition: all 0.3s ease-in-out;
     }
 }
 
