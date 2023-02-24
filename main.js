@@ -32,7 +32,8 @@ function Login(username) {
     const pLoginMessage = document.getElementById('pLoginMessage');
     btnOpenLogin.removeEventListener('click', toggleLoginForm);
     toggleLoginForm();
-    pLoginMessage.innerHTML = `Du är inloggad som <strong>${username}</strong>`
+    let message = checkHistory(username) ? "Välkommen tillbaka " : "Du är inloggad som ";
+    pLoginMessage.innerHTML = `${message}<strong>${username}</strong>`
     pLoginMessage.classList.remove('hidden');
 }
 
@@ -64,5 +65,3 @@ function init() {
 
     
 init();
-
-localStorage.clear();
